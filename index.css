@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-.control-panel {
+nav {
     display: flex;
     flex: 2;
     flex-direction: column;
@@ -35,8 +35,8 @@ body {
 
 .list-element {
     list-style-type: none;
-    padding: 0.8em;
-    margin: 0.8em auto;
+    padding: 0.4em;
+    margin: 0.4em auto;
     text-align: center;
     font-size: 1.4em;
 }
@@ -50,6 +50,7 @@ body {
     font-size: 1em;
 }
 
-.main-presentation {
-    flex: 8
+.main-panel {
+    flex: 8;
+    padding: 2px;
 }
