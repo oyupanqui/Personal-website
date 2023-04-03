@@ -8,11 +8,25 @@ body {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow: auto;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 nav {
     display: flex;
     flex: 2;
+    gap: 0.4em;
     flex-direction: column;
     justify-content: space-evenly;
     background-image: url(background.jpg);
@@ -25,12 +39,23 @@ nav {
 
 .main-photo {
     border-radius: 50%;
-    width: 70%;
+    width: 60%;
     margin: 0px auto
 }
 
+.main-photo-container {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.main-photo-container:hover {
+    transform: scale(0.85);
+    transition-duration: 0.5s;
+}
+
 .list-container {
-    padding: 0px
+    padding: 0px;
+    margin: 0px;
 }
 
 .list-element {
@@ -50,6 +75,23 @@ nav {
 }
 
 .list-element:hover {
+    --p: 100%;
+    background-position: right;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-evenly;
+}
+
+.icon-container>a>svg {
+    padding: 0.4em;
+    background: linear-gradient(white 0 0) left / var(--p,0) no-repeat;
+    transition: background .4s, background-position 0s;
+}
+
+.icon-container>a>svg:hover {
     --p: 100%;
     background-position: right;
 }
