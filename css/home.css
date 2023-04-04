@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.home-photo-container {
+    text-align: center;
+}
+
+.home-photo {
+    height: 400px;
+    border-radius: 50px;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.home-photo:hover {
+    transform: scale(0.85);
+    transition-duration: 0.5s;
+}

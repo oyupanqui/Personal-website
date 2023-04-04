@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     overflow: auto;
@@ -23,23 +23,29 @@ body {
     }
 }
 
+.nav-container {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 20vw;
+    background-color: skyblue;
+    text-align: center;
+}
+
 nav {
     display: flex;
     flex: 2;
     gap: 0.4em;
     flex-direction: column;
     justify-content: space-evenly;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     background-color: skyblue;
     text-align: center;
 }
 
+
 .main-photo {
     border-radius: 50%;
-    width: 60%;
+    width: 80%;
     margin: 0px auto
 }
 
@@ -103,4 +109,5 @@ nav {
 .main-panel {
     flex: 8;
     padding: 2px;
+    margin-left: 20vw;
 }
