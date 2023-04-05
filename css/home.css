@@ -19,7 +19,7 @@ p {
 }
 
 .home-photo {
-    height: 400px;
+    width: 50vw;
     border-radius: 50px;
     transform: scale(1);
     transition-duration: 0.5s;
@@ -29,3 +29,4 @@ p {
     transform: scale(0.85);
     transition-duration: 0.5s;
 }
+
