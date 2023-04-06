@@ -43,7 +43,7 @@ body {
 nav {
     display: flex;
     flex: 2;
-    gap: 5vh;
+    gap: 5px;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: skyblue;
@@ -62,7 +62,7 @@ nav {
 }
 
 .main-photo-container:hover {
-    transform: scale(0.85);
+    transform: scale(1.1);
     transition-duration: 0.5s;
 }
 
@@ -127,8 +127,9 @@ a:link, a:visited, a:active {
 }
 
 .mobile-links {
-    display: none;
-    transition: opacity 1s, visibility 1s;
+    max-height: 0px;
+    opacity: 0%;
+    transition: 0.3s;
 }
 
 .mobile-list-element {

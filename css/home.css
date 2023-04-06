@@ -26,7 +26,7 @@ p {
 }
 
 .home-photo:hover {
-    transform: scale(0.85);
+    transform: scale(1.1);
     transition-duration: 0.5s;
 }
 
