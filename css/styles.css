@@ -11,22 +11,10 @@ body {
     flex-direction: row;
     height: 100vh;
     width: 100vw;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
     overflow: auto;
     background-image: linear-gradient(to right, #9FDDF2, white);
     background-size: cover;
     background-repeat: repeat-y;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 /* Navigation panel */
@@ -151,7 +139,21 @@ a:link, a:visited, a:active {
 .main-panel {
     flex: 8;
     padding: 2px;
+    flex-direction: column;
+    margin: auto;
     margin-left: 20vw;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Scrollbar */
