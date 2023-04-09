@@ -30,7 +30,6 @@ body {
 
 nav {
     display: flex;
-    flex: 2;
     gap: 5px;
     flex-direction: column;
     justify-content: space-evenly;
