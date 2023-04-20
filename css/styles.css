@@ -8,9 +8,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
     overflow: auto;
     background-image: linear-gradient(to right, #9FDDF2, white);
     background-size: cover;
@@ -23,6 +22,8 @@ body {
     display: flex;
     position: fixed;
     height: 100vh;
+    bottom: 0;
+    left: 0;
     width: 20vw;
     background-color: #87ceeb;
     text-align: center;
@@ -156,6 +157,25 @@ a:link, a:visited, a:active {
     }
 }
 
+/* Footer */
+
+footer {
+    display: none;
+    margin: auto;
+    margin-left: 22vw;
+    margin-right: 2vw;
+}
+
+.credits {
+    text-align: center;
+}
+
+footer>.icon-container>a>svg {
+    padding: 10px;
+    background: linear-gradient(#87ceeb 0 0) left / var(--p,0) no-repeat;
+    transition: background .4s, background-position 0s;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -189,12 +209,16 @@ a:link, a:visited, a:active {
     .mobile-container {
         display: block;
     }
+    footer {
+        margin-left: 2vw;
+        display: block;
+    }
 }
 
 /* Blue rule*/
 .blue-rule {
     background-color: rgb(50, 169, 238);
-    height: 1.5vh;
+    height: 1.2vh;
     border-radius: 5px;
     border: 0;
     margin: 5vh;
