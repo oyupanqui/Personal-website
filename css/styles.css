@@ -223,3 +223,16 @@ footer>.icon-container>a>svg {
     border: 0;
     margin: 5vh;
 }
+
+/* Title background*/
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+}
