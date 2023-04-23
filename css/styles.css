@@ -24,18 +24,19 @@ body {
     height: 100vh;
     bottom: 0;
     left: 0;
-    width: 20vw;
     background-color: #87ceeb;
     text-align: center;
 }
 
 nav {
     display: flex;
+    width: 20vw;
     gap: 5px;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: skyblue;
     text-align: center;
+    overflow: hidden;
 }
 
 .main-photo {
