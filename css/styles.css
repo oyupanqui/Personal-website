@@ -86,13 +86,13 @@ a:link, a:visited, a:active {
     justify-content: space-evenly;
 }
 
-.icon-container>a>svg {
+.icon-container>a>img {
     padding: 10px;
     background: linear-gradient(white 0 0) left / var(--p,0) no-repeat;
     transition: background .4s, background-position 0s;
 }
 
-.icon-container>a>svg:hover {
+.icon-container>a>img:hover {
     --p: 100%;
     background-position: right;
 }
@@ -110,7 +110,7 @@ a:link, a:visited, a:active {
     background-color: skyblue;
 }
 
-.icon, .icon>svg {
+.icon, .icon>img {
     display: block;
     margin: 5px auto;
 }
@@ -171,7 +171,7 @@ footer {
     text-align: center;
 }
 
-footer>.icon-container>a>svg {
+footer>.icon-container>a>img {
     padding: 10px;
     background: linear-gradient(#87ceeb 0 0) left / var(--p,0) no-repeat;
     transition: background .4s, background-position 0s;
