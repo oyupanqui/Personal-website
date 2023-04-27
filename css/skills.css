@@ -13,3 +13,126 @@ p {
     text-align: center;
     font-size: 20px;
 }
+
+.gis-list>li, .aptitudes-list>li {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.progress-bar-container {
+    margin: 10px;
+    width: 80%;
+    border: 1px solid #565656;
+    height: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+.percentage {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    animation-name: progress;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.percentage.gis {
+    background-color: orange;
+}
+
+.percentage.rs {
+    background-color: green;
+}
+
+.percentage.platform {
+    background-color: blue;
+}
+
+.percentage.programming {
+    background-color: red;
+}
+
+.percentage:hover {
+    animation-name: emptyanimation; 
+}
+
+/* Percentage of each skill*/
+
+/* GIS*/
+.arcgis-desktop {
+    width: 90%
+}
+
+.arcgis-pro {
+    width: 80%
+}
+
+.qgis {
+    width: 75%
+}
+
+.postgis {
+    width: 20%
+}
+
+/* RS*/
+.envi {
+    width: 90%
+}
+
+.snap {
+    width: 75%
+}
+
+.gdal {
+    width: 70%
+}
+
+.erdas {
+    width: 60%
+}
+
+/* Online*/
+.gee {
+    width: 95%
+}
+
+.colab {
+    width: 85%
+}
+
+.github {
+    width: 80%
+}
+
+.planetary {
+    width: 20%
+}
+
+/* Programming*/
+.python {
+    width: 90%
+}
+
+.javascript {
+    width: 80%
+}
+
+.html {
+    width: 70%
+}
+
+.css {
+    width: 70%
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+/* To reset the animation*/
+@keyframes emptyanimation {}
