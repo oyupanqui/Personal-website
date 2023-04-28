@@ -1,4 +1,5 @@
-.gis-list>li, .aptitudes-list>li {
+.gis-list>li, .imagery-list>li, .platforms-list>li,
+.programming-list>li, .data-list>li, .drone-list>li, .aptitudes-list>li {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -149,7 +150,7 @@
 
 @media screen and (max-width: 1200px) {
     .gis-list>li, .imagery-list>li, .platforms-list>li,
-    .programming-list>li, .data-list>li, .aptitudes-list>li {
+    .programming-list>li, .data-list>li, .drone-list>li, .aptitudes-list>li {
         font-size: 14px;
         margin-top: 5px;
         margin-bottom: 5px;
