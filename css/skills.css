@@ -1,5 +1,6 @@
 .gis-list>li, .imagery-list>li, .platforms-list>li,
-.programming-list>li, .data-list>li, .drone-list>li, .aptitudes-list>li {
+.programming-list>li, .data-list>li, .drone-list>li, .aptitudes-list>li,
+.language-list>li {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -45,6 +46,10 @@
 
 .percentage.drone {
     background-color: purple;
+}
+
+.percentage.language {
+    background-color: lightgreen;
 }
 
 .percentage:hover {
@@ -138,6 +143,24 @@
 .processing {
     width: 40%
 }
+
+/* Language*/
+.spanish {
+    width: 100%
+}
+
+.english {
+    width: 80%
+}
+
+.portuguese {
+    width: 20%
+}
+
+.chinese {
+    width: 10%
+}
+
 
 @keyframes progress {
     from {
